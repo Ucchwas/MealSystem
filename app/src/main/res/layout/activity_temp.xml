@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SecondActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_weekly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="0dp" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="739dp">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:background="#44BFB1"
+                android:layout_weight = "8.5"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="70dp" />
+
+            <!--        <Button-->
+            <!--            android:id="@+id/btnItem"-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:layout_alignParentTop="true"-->
+            <!--            android:layout_centerHorizontal="true"-->
+            <!--            android:layout_marginTop="350dp"-->
+            <!--            android:padding="8dp"-->
+            <!--            android:text="Number Of Meals"-->
+            <!--            android:textColor="@color/purple_700" />-->
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="end|bottom"
+                android:layout_marginTop="520dp"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/white"
+                android:elevation="6dp"
+                android:src="@drawable/ic_add"
+                app:backgroundTint="#D1ABAB"
+                app:fabSize="normal"
+                app:rippleColor="#DFC4C4" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recyclerView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="6dp"
+                android:layout_marginRight="6dp"
+                android:text="Button"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+
+</LinearLayout>

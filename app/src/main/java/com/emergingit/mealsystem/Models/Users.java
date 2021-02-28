@@ -10,4 +10,10 @@ public class Users {
     private String uname;
     private String password;
     private String email;
+
+    public Users(String uname,String email,String password) {
+        this.uname = uname;
+        this.password = password;
+        this.email = email;
+    }
 }

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/weeklymeal"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:text="  Name  Count  Amount  "
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_weight = "8.5"
+        android:layout_width="match_parent"
+        android:layout_height="6dp" />
+
+
+    <TextView
+        android:id="@+id/totalweeklymeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="TOTAL AMOUNT"
+        android:layout_gravity="center_horizontal"
+        android:textSize="40sp"
+        android:textColor="@color/cardview_light_background"></TextView>
+    <TextView
+        android:id="@+id/totalmealcount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="MEAL COUNT"
+        android:layout_gravity="center_horizontal"
+        android:textSize="40sp"
+        android:textColor="@color/cardview_light_background"></TextView>
+
+
+</LinearLayout>

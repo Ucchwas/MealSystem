@@ -12,7 +12,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Weekly Data"
+        android:text="ALL USERS"
         android:textColor="@color/white"
         android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"

@@ -30,19 +30,33 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater layoutInflater = LayoutInflater.from(context);
         View view = layoutInflater.inflate(R.layout.my_row,parent,false);
+
         return new MyViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        holder.uname.setText(weeklyDataList.get(position).getUser().get(0).getUname());
-        holder.totalMeal.setText(""+weeklyDataList.get(position).getTotalMeal());
-        holder.totalPrice.setText(""+weeklyDataList.get(position).getTotalPrice());
+        if(weeklyDataList.get(position).getUser().size()>0){
+            holder.uname.setText(weeklyDataList.get(position).getUser().get(0).getUname());
+            holder.totalMeal.setText(""+weeklyDataList.get(position).getTotalMeal());
+            holder.totalPrice.setText(""+weeklyDataList.get(position).getTotalPrice());
+            holder.setIsRecyclable(false);
+        }
     }
 
     @Override
     public int getItemCount() {
         return weeklyDataList.size();
+    }
+
+    @Override
+    public long getItemId(int position) {
+        return position;
+    }
+
+    @Override
+    public int getItemViewType(int position) {
+        return position;
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {

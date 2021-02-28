@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/food"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_weeklymeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#000000"
+        android:text="Weekly Meal"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="280dp"
+        ></Button>
+
+    <Button
+        android:id="@+id/btn_todaysmeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#000000"
+        android:text="Today's Meal"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"></Button>
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/user_id"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:backgroundTint="@color/colorAccent"-->
+<!--        android:text="USER ID"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:textSize="30dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textStyle="italic">-->
+<!--    </TextView>-->
+
+
+</LinearLayout>

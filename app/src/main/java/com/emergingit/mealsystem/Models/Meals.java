@@ -8,10 +8,14 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 public class Meals {
-    private int mealId;
-    private int userId;
+    private String mealId;
+    private String userId;
     private Date date;
     private int mealCount;
     private int price;
 
+    public Meals(String userId, int mealCount) {
+        this.userId = userId;
+        this.mealCount = mealCount;
+    }
 }

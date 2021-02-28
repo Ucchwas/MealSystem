@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MealSystem">
         <activity android:name=".RegisterActivity"></activity>
         <activity android:name=".SecondActivity" />
+        <activity android:name=".UserActivity" />
+        <activity android:name=".MealsActivity" />
+        <activity android:name=".WeeklyActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

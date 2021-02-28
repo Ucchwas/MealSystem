@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Users</string>
+    <string-array name="meals">
+        <item>Choose a number</item>
+        <item>One</item>
+        <item>Two</item>
+        <item>Three</item>
+        <item>Four</item>
+    </string-array>
 </resources>
